@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: "Roboto", sans-serif;;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    border-bottom: 0.1px solid gray;
+    background-color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 15px 150px;
+    box-sizing: border-box;
+}
+ul li{
+    display: inline-flex;
+    margin-right: 20px;
+    color: gray;
+}
+
+ul li:last-child{
+    margin-right: none;
+}
+
+nav button{
+    background-color:  hsl(136, 65%, 51%);
+    padding:10px 25px;
+    border-radius: 20px;
+    border: none;
+}
+main{
+    overflow-x: hidden;
+}
+
+.section1{
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    
+}
+.straight{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    margin-left: 150px;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 130px;
+    color: gray;
+    
+}
+.straight button{
+    background-color:  hsl(136, 65%, 51%);
+    padding:10px 25px;
+    border-radius: 20px;
+    border: none;
+    width: 40%;
+}
+div h1{
+    font-size: 3.5rem;
+    font-weight: lighter;
+}
+.bg{
+    margin-top: -100px;
+    margin-right: -210px;
+    background-image: url(./images/bg-intro-desktop.svg);
+    background-repeat:round;
+}
+.bg img{
+    right: -60px;
+    position: relative; 
+    width: 80%;
+}
+
+.section2{
+ background-color: hsl(0, 0%, 98%);
+ gap: 100px;
+  
+}
+.package{
+    
+    display: grid;
+    grid-template-columns:auto;
+    margin-left: 150px;
+
+}
+.package h1,p{
+    margin-top: 50px;
+}
+.icon_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px 0px;
+
+
+}
+.box h3,p{
+    margin-top: 30px;
+}
+.package2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.box2 img{
+    width: 20%;
+}
