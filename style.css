@@ -67,6 +67,7 @@ main{
 div h1{
     font-size: 3.5rem;
     font-weight: lighter;
+    color: hsl(233, 26%, 24%);
 }
 .bg{
     margin-top: -100px;
@@ -105,11 +106,38 @@ div h1{
 .box h3,p{
     margin-top: 30px;
 }
-.package2{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+.section3{
+    background-color: white;
 }
-
-.box2 img{
-    width: 20%;
+.section3 h1{
+    background-color:  hsl(0, 0%, 98%);
+    font-size: 3.2rem;
+    margin-left: 140px;
+    color: hsl(233, 26%, 24%);
+}
+.package2{
+    margin-top: 30px;
+    margin-left: 140px;
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    gap: 40px;
+}
+.imgbox{
+    background-color: hsl(220, 16%, 96%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 0px;
+   
+}
+.imgbox img{
+    width: 100%;
+}.imgbox small{
+    font-size: smaller;
+}
+.imgbox small,h3,p{
+    color: hsl(233, 26%, 24%);
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
