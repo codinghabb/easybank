@@ -30,19 +30,23 @@ ul li:last-child{
     margin-right: none;
 }
 
-nav button{
+nav .reg{
     background-color:  hsl(136, 65%, 51%);
     padding:10px 25px;
     border-radius: 20px;
     border: none;
 }
+nav .mobileBurger{
+    display: none;
+}
+
 main{
     overflow-x: hidden;
 }
 
 .section1{
     display: flex;
-    justify-content: space-between;
+    justify-content: center; 
     height: 500px;
     
 }
@@ -50,7 +54,7 @@ main{
     width: 500px;
     height: 300px;
     display: flex;
-    margin-left: 150px;
+    margin-left: 100px;
     justify-content: space-between;
     flex-direction: column;
     box-sizing: border-box;
@@ -181,4 +185,45 @@ div button{
 }
 div .t{
     color: white;
+}
+/* tablet view */
+@media (max-width:950px) {
+    nav ul,.reg{
+        display: none;
+    }
+    nav .mobileBurger{
+        display: block;
+    }
+    .section1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        height: 800px;
+    }
+    .straight{
+      margin: auto;
+      
+       
+        color: gray;
+        
+    }
+    .bg{
+        margin-top: -100px;
+        margin-right: -210px;
+        background-image: url(./images/bg-intro-desktop.svg);
+        background-repeat:round;
+    }
+    .bg img{
+        right: -175px;
+        position: relative; 
+        width: 50%;
+    }
+    .straight{
+        text-align: center;
+        height: 500px;
+    }
+   .package{
+    display: grid;
+     grid-template-columns:repeat(2, 1fr)
+   }
 }
